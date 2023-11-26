@@ -75,12 +75,7 @@ contract Token {
     //event BalanceChecked(address indexed account, uint256 balance);
 
     function balanceOf(address account) external view returns (uint256) {
-        uint256 balance = balances[account];
-        
-        // Emit an event for debugging
-        //emit BalanceChecked(account, balance);
-
-        return balance;
+        return balances[account];
     }
 
 }
