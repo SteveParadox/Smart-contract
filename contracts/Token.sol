@@ -11,11 +11,11 @@ import "hardhat/console.sol";
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "Roygx Token";
-    string public symbol = "RXT";
+    string public name = "My Hardhat Token";
+    string public symbol = "MHT";
 
     // The fixed amount of tokens stored in an unsigned integer type variable.
-    uint256 public totalSupply = 1000000000;
+    uint256 public totalSupply = 1000000;
 
     // An address type variable is used to store ethereum accounts.
     address public owner;
@@ -72,10 +72,7 @@ contract Token {
      * The `view` modifier indicates that it doesn't modify the contract's
      * state, which allows us to call it without executing a transaction.
      */
-    //event BalanceChecked(address indexed account, uint256 balance);
-
     function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
-
 }
