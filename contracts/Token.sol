@@ -72,13 +72,13 @@ contract Token {
      * The `view` modifier indicates that it doesn't modify the contract's
      * state, which allows us to call it without executing a transaction.
      */
-    event BalanceChecked(address indexed account, uint256 balance);
+    //event BalanceChecked(address indexed account, uint256 balance);
 
     function balanceOf(address account) external view returns (uint256) {
         uint256 balance = balances[account];
         
         // Emit an event for debugging
-        emit BalanceChecked(account, balance);
+        //emit BalanceChecked(account, balance);
 
         return balance;
     }
