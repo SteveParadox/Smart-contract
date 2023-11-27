@@ -18,7 +18,7 @@ export function ConnectWallet({ connectWallet, networkError, dismiss }) {
         <div className="col-6 p-4 text-center">
           <p>Please Connect to your wallet to access your Account.</p>
           <button
-            className="btn btn-success"
+            className="btn btn-warning"
             type="button"
             onClick={connectWallet}
           >
